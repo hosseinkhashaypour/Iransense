@@ -1,0 +1,179 @@
+:root {
+  --fontirs: irs;
+  --fontbahman: bahman;
+  --fontlale: lale;
+  --fontaviny: aviny;
+  --color1: #04aa6d;
+  --color2: #6528e0;
+  --color3: rgb(7 112 112);
+  --color4: rgb(23, 240, 23);
+  --color5: #0c0025;
+  --color6: rgb(1, 1, 54);
+  --color7: #171615;
+  --color8: #1d1615;
+  --color9: #20211a;
+  --color10: #141514;
+  --color11: #0f0616;
+  --color12: #292827;
+  --glasswhite: rgba(255, 255, 255, 0.5);
+  --bg-light: #eee;
+  --bg-light-2: rgb(244, 247, 251);
+  --bg-dark: #444;
+  --bg-dark-2: #151515;
+  --bg-dark-3: #212529;
+  --bg-dark-4: #14151a;
+  --bg-dark-5: rgb(13, 23, 38);
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: irs;
+  src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+  font-family: lale;
+  src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+  font-family: bahman;
+  src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+  font-family: aviny;
+  src: url(aviny.ttf);
+}
+*{
+  box-sizing: border-box;
+  font-family: var(--fontirs);
+}
+/* mfd */
+
+@media (min-width: 300px) {
+  body {
+    overflow-x: hidden;
+    transition: background-color 1s;
+    background: var(--bg-dark-5) !important;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+  
+  }
+  #backhome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #backhome > button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    width: 100%;
+    color: white;
+    font-family: var(--fontirs);
+    margin: 5%;
+  }
+  #backhome > button::before{
+    content: "\003C";
+  }
+  #form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--glasswhite);
+    width: 23rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* margin-left: 3%; */
+    box-shadow: 1px 1px 2px 1px white;
+  }
+  #email,#password{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: var(--fontirs);
+    text-align: center;
+    width: 100%;
+    /* margin-left: -25%; */
+  }
+  #submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px 20px;
+    background-color: var(--color2);
+    border-radius: 10px;
+    color: white;
+    margin-left: 10%;
+  }
+  a{
+    text-align: right;
+  }
+  #user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user{
+    width: 20%;
+    background-color: white;
+    clip-path: circle(50%);
+  }
+  #forgot-pass{
+    direction: rtl;
+  }
+  #otp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #otp > button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #04aa6d;
+    color : white;
+  }
+  .err{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+  }
+  #displayOtp {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+}
+
+
+/* res */
+
+@media(min-width : 700px){
+  body {
+    overflow-x: hidden;
+    transition: background-color 1s;
+    background: var(--bg-dark-5) !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+}
